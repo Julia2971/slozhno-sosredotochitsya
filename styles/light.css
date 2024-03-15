@@ -11,7 +11,8 @@
   --colour-title: #ffc2e6;
   --colour-subtitle: #353430;
   --menu-colour: #353430;
-  --content-subtitle: #353430;      
+  --content-subtitle: #353430;
+  --menu-hover: rgba(50, 49, 45, 0.4)   
 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -27,5 +28,16 @@
     --colour-subtitle: #353430;
     --menu-colour: #353430;
     --content-subtitle: #353430;
+    --menu-hover: rgba(50, 49, 45, 0.4) 
+    
   }
+}
+
+
+.page.theme_light .decorated-zone__img::before {
+	display: none;
+}
+
+.page.theme_light .decorated-zone__text {
+	display: none;
 }
