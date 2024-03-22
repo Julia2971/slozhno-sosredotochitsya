@@ -12,13 +12,23 @@
   --colour-subtitle: #353430;
   --menu-colour: #353430;
   --content-subtitle: #353430;
-  --menu-hover: rgba(50, 49, 45, 0.4)   
+  --menu-hover: rgba(50, 49, 45, 0.4);
+
 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+
+.page.theme_light .decorated-zone__text::after {
+  display: none;
+}
+
+.page.theme_light .decorated-zone__text {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --bg-colour: #fff1f7;
@@ -29,15 +39,14 @@
     --menu-colour: #353430;
     --content-subtitle: #353430;
     --menu-hover: rgba(50, 49, 45, 0.4) 
-    
+
+  }
+ 
+  .decorated-zone__text{
+    display: none;
+  }
+  .decorated-zone__text::after{
+    display: none;
   }
 }
 
-
-.page.theme_light .decorated-zone__img::before {
-	display: none;
-}
-
-.page.theme_light .decorated-zone__text {
-	display: none;
-}

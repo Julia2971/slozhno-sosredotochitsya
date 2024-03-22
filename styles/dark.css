@@ -19,6 +19,13 @@
   */
 }
 
+.page.theme_dark .decorated-zone__text::after {
+  display: inline-block;
+}
+
+.page.theme_dark .decorated-zone__text {
+  display: block;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --accent-colour: #FF0070;
@@ -30,4 +37,11 @@
     --content-subtitle: #F1B2CE;
     --menu-hover: rgba(255, 0, 112, 0.4);
   }
+.decorated-zone__text {
+    display: block;
+  
+}
+.decorated-zone__text::after{
+  display: inline-block;
+}
 }
